@@ -13,7 +13,7 @@ struct CartView: View {
     var body: some View {
             VStack {
                 if cart.isEmpty {
-                    Text("Корзина пуста")
+                    Text("Cart is empty")
                         .font(.largeTitle)
                         .padding()
                 } else {

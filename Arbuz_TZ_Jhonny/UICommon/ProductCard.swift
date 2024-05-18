@@ -10,13 +10,14 @@ import SwiftUI
 struct ProductCard: View {
     
    @State private var isFav: Bool = false
-//    let product: Product
-
+    
+    let product: Product
+    
     var didAddCart: (()->())?
     var body: some View {
         ZStack(alignment: .topTrailing){
             VStack{
-                    Image("banana")
+                    Image(product.imageName)
                         .resizable()
                         .scaledToFill()
                         .frame(width: 130, height: 100)
@@ -25,18 +26,18 @@ struct ProductCard: View {
                     
                 
                 
-                Text("Banana")
+                Text(product.name)
                     .padding(.top)
                 HStack{
-                    Text("565 tg")
+                    Text("\(product.price) tg")
                     Text("*")
-                    Text("1 pcs")
+                    Text("\(product.quantity)")
                 }
                 Button{
                     didAddCart?()
                 } label:{
                     HStack{
-                        Text("565 tg")
+                        Text("\(product.price) tg")
                         Image(systemName: "plus")
                     }
                 }
@@ -71,6 +72,6 @@ struct ProductCard: View {
 
 struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCard()
+        ProductCard(product: Product(name: "Banana", price: 1000, quantity: "1 pcs.", imageName: "banana"))
     }
 }

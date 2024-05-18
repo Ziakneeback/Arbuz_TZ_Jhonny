@@ -11,9 +11,10 @@ import SwiftUI
 struct Arbuz_TZ_JhonnyApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView{
-                WelComeView()
-            }
+//            NavigationView{
+//                WelComeView()
+//            }
+            MainTabView()
         }
     }
 }

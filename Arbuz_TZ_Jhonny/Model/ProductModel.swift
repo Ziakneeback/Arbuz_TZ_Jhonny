@@ -23,8 +23,8 @@ struct ProductModel: View {
 
 
 
-//let apple = Product(image: "apple", name: "Яблоко", price: 1.99, unit: "кг")
-//let bread = Product(image: "bread", name: "Хлеб", price: 0.99, unit: "шт")
+//let apple = Product(image: "apple", name: "apple", price: 1000, quantity: "kg")
+//let bread = Product(image: "bread", name: "bread", price: 150, quantity: "pcs")
 
 struct ProductModel_Previews: PreviewProvider {
     static var previews: some View {

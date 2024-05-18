@@ -21,6 +21,7 @@
 		B2BDFECC2BF88AF600EEA4EF /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFECB2BF88AF600EEA4EF /* ProductCard.swift */; };
 		B2BDFECE2BF89FF800EEA4EF /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFECD2BF89FF800EEA4EF /* Title.swift */; };
 		B2BDFED02BF8C20E00EEA4EF /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFECF2BF8C20E00EEA4EF /* ProductModel.swift */; };
+		B2BDFED32BF8D03C00EEA4EF /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFED22BF8D03C00EEA4EF /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B2BDFECB2BF88AF600EEA4EF /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		B2BDFECD2BF89FF800EEA4EF /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		B2BDFECF2BF8C20E00EEA4EF /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		B2BDFED22BF8D03C00EEA4EF /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		B2BDFEB42BF7CB5900EEA4EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2BDFED12BF8D01F00EEA4EF /* ProductDetailView */,
 				B2BDFEC22BF7DF4C00EEA4EF /* CartView */,
 				B2BDFEBF2BF7DF3000EEA4EF /* HomeView */,
 				B2BDFEBC2BF7DEE300EEA4EF /* MainTabView */,
@@ -151,6 +154,14 @@
 				B2BDFEC32BF7DF6200EEA4EF /* CartView.swift */,
 			);
 			path = CartView;
+			sourceTree = "<group>";
+		};
+		B2BDFED12BF8D01F00EEA4EF /* ProductDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDFED22BF8D03C00EEA4EF /* ProductDetailView.swift */,
+			);
+			path = ProductDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 				B2BDFEC42BF7DF6200EEA4EF /* CartView.swift in Sources */,
 				B2BDFEC82BF7E7EB00EEA4EF /* HomeViewModel.swift in Sources */,
 				B2BDFEA72BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift in Sources */,
+				B2BDFED32BF8D03C00EEA4EF /* ProductDetailView.swift in Sources */,
 				B2BDFEC12BF7DF4200EEA4EF /* HomeView.swift in Sources */,
 				B2BDFECC2BF88AF600EEA4EF /* ProductCard.swift in Sources */,
 				B2BDFED02BF8C20E00EEA4EF /* ProductModel.swift in Sources */,

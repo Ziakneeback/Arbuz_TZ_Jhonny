@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var selectedProduct: Product? = nil
+    @State private var showBottomSheet: Bool = false
     
     let products = [
         Product(name: "Banana", price: 1400, quantity: "7 pcs.", imageName: "banana"),
@@ -35,8 +37,12 @@ struct HomeView: View {
                         ScrollView(.horizontal, showsIndicators: false){
                             LazyHStack(spacing: 10){
                                 ForEach(products) { product in
-                                    
-                                    ProductCard(product: product)
+                                    Button(action: {
+                                        self.selectedProduct = product
+                                        self.showBottomSheet = true
+                                    }) {
+                                        ProductCard(product: product)
+                                    }
                                 }
                             }
                             .padding(.horizontal, 10)
@@ -44,11 +50,30 @@ struct HomeView: View {
                         
                         Title(title: "Vertical")
                         
-                        ForEach(products) { product in
+                        ForEach(0..<products.count / 2) { index in
                                 HStack{
-                                    ProductCard(product: product)
-                                    ProductCard(product: product)
+                                    Button(action: {
+                                        self.selectedProduct = products[index * 2]
+                                        self.showBottomSheet = true
+                                    }) {
+                                        ProductCard(product: products[index * 2])
+                                    }
+                                    if index * 2 + 1 < products.count {
+                                        Button(action: {
+                                        self.selectedProduct = products[index * 2 + 1]
+                                        self.showBottomSheet = true
+                                        }) {
+                                            ProductCard(product: products[index * 2 + 1])
+                                        }
+                                                        }
                                 }
+                            
+                            if products.count % 2 != 0 {
+                    HStack {
+                        ProductCard(product: products[products.count - 1])
+                        Spacer().frame(width: 150)
+                    }
+                                        }
                             }
                         .padding(.top, 5)
                     }
@@ -56,6 +81,11 @@ struct HomeView: View {
             }
         }
         .ignoresSafeArea()
+        .sheet(isPresented: $showBottomSheet) {
+                    if let product = selectedProduct {
+                        ProductDetailView(product: product, isPresented: $showBottomSheet)
+                    }
+                }
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2763E3A2BF90096004FDAB3 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2763E392BF90096004FDAB3 /* CheckoutView.swift */; };
 		B2BDFEA72BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEA62BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift */; };
 		B2BDFEAB2BF7BF8D00EEA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BDFEAA2BF7BF8D00EEA4EF /* Assets.xcassets */; };
 		B2BDFEAE2BF7BF8D00EEA4EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BDFEAD2BF7BF8D00EEA4EF /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2763E392BF90096004FDAB3 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		B2BDFEA32BF7BF8B00EEA4EF /* Arbuz_TZ_Jhonny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arbuz_TZ_Jhonny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BDFEA62BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arbuz_TZ_JhonnyApp.swift; sourceTree = "<group>"; };
 		B2BDFEAA2BF7BF8D00EEA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2763E382BF90076004FDAB3 /* CheckoutView */ = {
+			isa = PBXGroup;
+			children = (
+				B2763E392BF90096004FDAB3 /* CheckoutView.swift */,
+			);
+			path = CheckoutView;
+			sourceTree = "<group>";
+		};
 		B2BDFE9A2BF7BF8B00EEA4EF = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		B2BDFEB42BF7CB5900EEA4EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2763E382BF90076004FDAB3 /* CheckoutView */,
 				B2BDFED12BF8D01F00EEA4EF /* ProductDetailView */,
 				B2BDFEC22BF7DF4C00EEA4EF /* CartView */,
 				B2BDFEBF2BF7DF3000EEA4EF /* HomeView */,
@@ -242,6 +253,7 @@
 				B2BDFEA72BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift in Sources */,
 				B2BDFED32BF8D03C00EEA4EF /* ProductDetailView.swift in Sources */,
 				B2BDFEC12BF7DF4200EEA4EF /* HomeView.swift in Sources */,
+				B2763E3A2BF90096004FDAB3 /* CheckoutView.swift in Sources */,
 				B2BDFECC2BF88AF600EEA4EF /* ProductCard.swift in Sources */,
 				B2BDFED02BF8C20E00EEA4EF /* ProductModel.swift in Sources */,
 				B2BDFECA2BF87EBC00EEA4EF /* TabButton.swift in Sources */,

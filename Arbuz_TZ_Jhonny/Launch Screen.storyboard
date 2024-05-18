@@ -22,7 +22,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_8572" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-J0-o5S">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArbuzLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-J0-o5S">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
@@ -45,6 +45,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_8572" width="1115" height="2215"/>
+        <image name="ArbuzLaunch" width="1115" height="2215"/>
     </resources>
 </document>

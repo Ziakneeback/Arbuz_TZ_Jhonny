@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductDetailView: View {
     let product: Product
     @Binding var isPresented: Bool
+    var addToCart: (Product) -> Void
 
     var body: some View {
         VStack {
@@ -24,21 +25,21 @@ struct ProductDetailView: View {
                 .font(.title)
                 .padding(.top, 16)
 
-            Text("Цена: \(product.price) руб.")
+            Text("Price: \(product.price) tg.")
                 .font(.title2)
                 .foregroundColor(.green)
                 .padding(.top, 8)
 
-            Text("Количество: \(product.quantity)")
+            Text("Quantity: \(product.quantity)")
                 .font(.body)
                 .foregroundColor(.gray)
                 .padding(.top, 8)
 
             Button(action: {
-                // Действие при добавлении в корзину
+                addToCart(product)
                 isPresented = false
             }) {
-                Text("Добавить в корзину")
+                Text("Add to cart")
                     .font(.title2)
                     .padding()
                     .frame(maxWidth: .infinity)
@@ -58,7 +59,8 @@ struct ProductDetailView: View {
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView(product: Product(name: "Название товара", price: 1000, quantity: "2 шт.", imageName: "image_name"), isPresented: .constant(true))
+        ProductDetailView(product: Product(name: "Banana", price: 1400, quantity: "7 pcs.", imageName: "banana"), isPresented: .constant(true), addToCart: { _ in })
     }
 }
+
 

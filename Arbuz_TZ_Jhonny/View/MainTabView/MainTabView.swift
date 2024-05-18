@@ -10,13 +10,13 @@ import SwiftUI
 struct MainTabView: View {
     
     @StateObject var homeVM = HomeViewModel.shared
-    
+    @State private var cart: [Product] = []
     var body: some View {
         VStack{
             
             TabView(selection: $homeVM.selectTab){
-                HomeView().tag(0)
-                CartView().tag(1)
+                HomeView(cart: $cart).tag(0)
+                CartView(cart: $cart).tag(1)
                 
             }
             .onAppear{

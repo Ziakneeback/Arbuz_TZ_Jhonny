@@ -8,35 +8,34 @@
 import SwiftUI
 
 struct ProductCard: View {
-    
-   @State private var isFav: Bool = false
+    @State private var isFav: Bool = false
     
     let product: Product
+    var addToCart: (Product) -> Void
     
-    var didAddCart: (()->())?
     var body: some View {
-        ZStack(alignment: .topTrailing){
-            VStack{
-                    Image(product.imageName)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 130, height: 100)
-                        .padding(.top)
-                        .cornerRadius(15)
-                    
-                
+        ZStack(alignment: .topTrailing) {
+            VStack {
+                Image(product.imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 130, height: 100)
+                    .padding(.top)
+                    .cornerRadius(15)
                 
                 Text(product.name)
                     .padding(.top)
-                HStack{
+                
+                HStack {
                     Text("\(product.price) tg")
                     Text("*")
                     Text("\(product.quantity)")
                 }
-                Button{
-                    didAddCart?()
-                } label:{
-                    HStack{
+                
+                Button {
+                    addToCart(product)
+                } label: {
+                    HStack {
                         Text("\(product.price) tg")
                         Image(systemName: "plus")
                     }
@@ -45,19 +44,16 @@ struct ProductCard: View {
                 .foregroundColor(Color.primary)
                 .background(Color.green)
                 .cornerRadius(20)
-                
-                
             }
             .frame(width: 180, height: 230)
-            
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(Color.green, lineWidth: 4)
             )
             
-            Button{
+            Button {
                 self.isFav.toggle()
-            } label:{
+            } label: {
                 Image(systemName: isFav ? "heart.fill" : "heart")
             }
             .foregroundColor(Color.red)
@@ -66,12 +62,10 @@ struct ProductCard: View {
             .padding(.horizontal, 5)
         }
     }
-    
-    
 }
 
 struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCard(product: Product(name: "Banana", price: 1000, quantity: "1 pcs.", imageName: "banana"))
+        ProductCard(product: Product(name: "Banana", price: 1000, quantity: "1 pcs.", imageName: "banana"), addToCart: { _ in })
     }
 }

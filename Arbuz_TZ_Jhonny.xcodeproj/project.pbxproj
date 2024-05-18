@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		B2BDFEA72BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEA62BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift */; };
-		B2BDFEA92BF7BF8B00EEA4EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEA82BF7BF8B00EEA4EF /* ContentView.swift */; };
 		B2BDFEAB2BF7BF8D00EEA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BDFEAA2BF7BF8D00EEA4EF /* Assets.xcassets */; };
 		B2BDFEAE2BF7BF8D00EEA4EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BDFEAD2BF7BF8D00EEA4EF /* Preview Assets.xcassets */; };
+		B2BDFEB92BF7CBB400EEA4EF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BDFEB82BF7CBB400EEA4EF /* Launch Screen.storyboard */; };
+		B2BDFEBB2BF7CE8D00EEA4EF /* WelComeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEBA2BF7CE8D00EEA4EF /* WelComeView.swift */; };
+		B2BDFEBE2BF7DF1A00EEA4EF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEBD2BF7DF1A00EEA4EF /* MainTabView.swift */; };
+		B2BDFEC12BF7DF4200EEA4EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEC02BF7DF4200EEA4EF /* HomeView.swift */; };
+		B2BDFEC42BF7DF6200EEA4EF /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEC32BF7DF6200EEA4EF /* CartView.swift */; };
+		B2BDFEC62BF7E4FB00EEA4EF /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEC52BF7E4FB00EEA4EF /* RoundButton.swift */; };
+		B2BDFEC82BF7E7EB00EEA4EF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEC72BF7E7EB00EEA4EF /* HomeViewModel.swift */; };
+		B2BDFECA2BF87EBC00EEA4EF /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDFEC92BF87EBC00EEA4EF /* TabButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2BDFEA32BF7BF8B00EEA4EF /* Arbuz_TZ_Jhonny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arbuz_TZ_Jhonny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BDFEA62BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arbuz_TZ_JhonnyApp.swift; sourceTree = "<group>"; };
-		B2BDFEA82BF7BF8B00EEA4EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2BDFEAA2BF7BF8D00EEA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2BDFEAD2BF7BF8D00EEA4EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2BDFEB82BF7CBB400EEA4EF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B2BDFEBA2BF7CE8D00EEA4EF /* WelComeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelComeView.swift; sourceTree = "<group>"; };
+		B2BDFEBD2BF7DF1A00EEA4EF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B2BDFEC02BF7DF4200EEA4EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B2BDFEC32BF7DF6200EEA4EF /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		B2BDFEC52BF7E4FB00EEA4EF /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		B2BDFEC72BF7E7EB00EEA4EF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B2BDFEC92BF87EBC00EEA4EF /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +65,14 @@
 		B2BDFEA52BF7BF8B00EEA4EF /* Arbuz_TZ_Jhonny */ = {
 			isa = PBXGroup;
 			children = (
+				B2BDFEB72BF7CB9900EEA4EF /* UICommon */,
+				B2BDFEB62BF7CB8A00EEA4EF /* ViewModel */,
+				B2BDFEB52BF7CB8200EEA4EF /* Model */,
+				B2BDFEB42BF7CB5900EEA4EF /* View */,
 				B2BDFEA62BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift */,
-				B2BDFEA82BF7BF8B00EEA4EF /* ContentView.swift */,
 				B2BDFEAA2BF7BF8D00EEA4EF /* Assets.xcassets */,
 				B2BDFEAC2BF7BF8D00EEA4EF /* Preview Content */,
+				B2BDFEB82BF7CBB400EEA4EF /* Launch Screen.storyboard */,
 			);
 			path = Arbuz_TZ_Jhonny;
 			sourceTree = "<group>";
@@ -65,6 +83,65 @@
 				B2BDFEAD2BF7BF8D00EEA4EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2BDFEB42BF7CB5900EEA4EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDFEC22BF7DF4C00EEA4EF /* CartView */,
+				B2BDFEBF2BF7DF3000EEA4EF /* HomeView */,
+				B2BDFEBC2BF7DEE300EEA4EF /* MainTabView */,
+				B2BDFEBA2BF7CE8D00EEA4EF /* WelComeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2BDFEB52BF7CB8200EEA4EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2BDFEB62BF7CB8A00EEA4EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDFEC72BF7E7EB00EEA4EF /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2BDFEB72BF7CB9900EEA4EF /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDFEC52BF7E4FB00EEA4EF /* RoundButton.swift */,
+				B2BDFEC92BF87EBC00EEA4EF /* TabButton.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		B2BDFEBC2BF7DEE300EEA4EF /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDFEBD2BF7DF1A00EEA4EF /* MainTabView.swift */,
+			);
+			path = MainTabView;
+			sourceTree = "<group>";
+		};
+		B2BDFEBF2BF7DF3000EEA4EF /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDFEC02BF7DF4200EEA4EF /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		B2BDFEC22BF7DF4C00EEA4EF /* CartView */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDFEC32BF7DF6200EEA4EF /* CartView.swift */,
+			);
+			path = CartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BDFEB92BF7CBB400EEA4EF /* Launch Screen.storyboard in Resources */,
 				B2BDFEAE2BF7BF8D00EEA4EF /* Preview Assets.xcassets in Resources */,
 				B2BDFEAB2BF7BF8D00EEA4EF /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2BDFEA92BF7BF8B00EEA4EF /* ContentView.swift in Sources */,
+				B2BDFEC62BF7E4FB00EEA4EF /* RoundButton.swift in Sources */,
+				B2BDFEC42BF7DF6200EEA4EF /* CartView.swift in Sources */,
+				B2BDFEC82BF7E7EB00EEA4EF /* HomeViewModel.swift in Sources */,
 				B2BDFEA72BF7BF8B00EEA4EF /* Arbuz_TZ_JhonnyApp.swift in Sources */,
+				B2BDFEC12BF7DF4200EEA4EF /* HomeView.swift in Sources */,
+				B2BDFECA2BF87EBC00EEA4EF /* TabButton.swift in Sources */,
+				B2BDFEBB2BF7CE8D00EEA4EF /* WelComeView.swift in Sources */,
+				B2BDFEBE2BF7DF1A00EEA4EF /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +357,11 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Asylbek.Zhanibek.Arbuz-TZ-Jhonny";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,8 +392,11 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +404,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Asylbek.Zhanibek.Arbuz-TZ-Jhonny";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

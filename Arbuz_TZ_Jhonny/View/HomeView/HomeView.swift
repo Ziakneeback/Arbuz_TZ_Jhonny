@@ -10,11 +10,16 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ZStack{
+            VStack(spacing: 0){
+                LinearGradient(colors: [.white, .yellow], startPoint: .top, endPoint: .bottom)
+                    .ignoresSafeArea()
+                LinearGradient(colors: [.yellow, .white], startPoint: .top, endPoint: .bottom)
+            }
             VStack{
                 Text("Arbuz.kz")
-                    .font(.largeTitle)
+                    .font(.largeTitle.weight(.semibold))
                     .padding(.top, 50)
-                ScrollView{
+                ScrollView(showsIndicators: false){
                     VStack{
                         Title(title: "Horizontal")
                         ScrollView(.horizontal, showsIndicators: false){
@@ -29,12 +34,12 @@ struct HomeView: View {
                         
                         Title(title: "Vertical")
                         
-                        ForEach(0...5, id: \.self){index in
-                            HStack{
-                                ProductCard{}
-                                ProductCard{}
+                            ForEach(0...5, id: \.self){index in
+                                HStack{
+                                    ProductCard{}
+                                    ProductCard{}
+                                }
                             }
-                        }
                         .padding(.top, 5)
                     }
                 }

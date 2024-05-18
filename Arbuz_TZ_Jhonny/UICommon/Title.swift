@@ -13,7 +13,7 @@ struct Title: View {
     var body: some View {
         HStack{
             Text(title)
-                .font(.largeTitle)
+                .font(.largeTitle.weight(.semibold))
           Spacer()
         }
         .padding(.horizontal)

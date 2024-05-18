@@ -70,7 +70,12 @@ struct HomeView: View {
                             
                             if products.count % 2 != 0 {
                     HStack {
-                        ProductCard(product: products[products.count - 1])
+                        Button(action: {
+                            self.selectedProduct = products[products.count - 1]
+                            self.showBottomSheet = true
+                        }) {
+                            ProductCard(product: products[products.count - 1])
+                        }
                         Spacer().frame(width: 150)
                     }
                                         }

@@ -12,7 +12,7 @@ struct Product: Identifiable {
     let id = UUID()
     let name: String
     let price: Int
-    let quantity: String
+    var quantity: String
     let imageName: String
 }
 struct ProductModel: View {

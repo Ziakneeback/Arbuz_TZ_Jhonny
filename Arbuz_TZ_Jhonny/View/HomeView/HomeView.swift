@@ -2,7 +2,6 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var cart: [Product]
-    
     var products: [Product] {
         return [
             Product(name: "Banana", price: 1400, quantity: "7 pcs.", imageName: "banana"),

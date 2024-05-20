@@ -85,7 +85,7 @@ struct ProductCard: View {
             .frame(width: 180, height: 250)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color.green, lineWidth: 4)
+                    .stroke(Color.gray, lineWidth: 4)
             )
             
             Button(action: {

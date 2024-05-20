@@ -60,6 +60,7 @@ struct ProductCard: View {
                             Image(systemName: "minus")
                                 .padding()
                                 .foregroundColor(.white)
+                                .background(quantity > 0 ? Color.green : Color.gray)
                                 .clipShape(Circle())
                         }
                         
@@ -67,12 +68,14 @@ struct ProductCard: View {
                             .padding(.horizontal)
                         
                         Button(action: {
-                            quantity += 1
-                            didAddToCart?(product, quantity)
+                            if quantity < 5 {
+                                quantity += 1
+                                didAddToCart?(product, quantity)
+                            }
                         }) {
                             Image(systemName: "plus")
                                 .padding()
-                                .background(Color.green)
+                                .background(quantity < 5 ? Color.green : Color.gray)
                                 .foregroundColor(.white)
                                 .clipShape(Circle())
                         }

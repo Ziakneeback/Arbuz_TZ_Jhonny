@@ -2,6 +2,10 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var cart: [Product]
+    
+    @State private var selectedProduct: Product? = nil
+    @State private var showBottomSheet: Bool = false
+    
     var products: [Product] {
         return [
             Product(name: "Banana", price: 1400, quantity: "7 pcs.", imageName: "banana"),
@@ -22,6 +26,9 @@ struct HomeView: View {
             }
         }
         .ignoresSafeArea()
+        .sheet(isPresented: $showBottomSheet) {
+            createProductDetail()
+        }
     }
     
     func createBackground() -> some View {
@@ -77,13 +84,42 @@ struct HomeView: View {
             if quantity > 0 {
                 if let index = cart.firstIndex(where: { $0.id == addedProduct.id }) {
                     cart[index].quantity = "\(quantity) pcs."
+                    cart[index].price = addedProduct.price * quantity
                 } else {
                     var productToAdd = addedProduct
                     productToAdd.quantity = "\(quantity) pcs."
+                    productToAdd.price = addedProduct.price * quantity
                     cart.append(productToAdd)
+                }
+            } else {
+                if let index = cart.firstIndex(where: { $0.id == addedProduct.id }) {
+                    cart.remove(at: index)
                 }
             }
         })
+        .onTapGesture {
+            self.selectedProduct = product
+            self.showBottomSheet = true
+        }
+    }
+    
+    func createProductDetail() -> some View {
+        if let product = selectedProduct {
+            return AnyView(ProductDetailView(product: product, isPresented: $showBottomSheet, addToCart: { addedProduct in
+                if let index = cart.firstIndex(where: { $0.id == addedProduct.id }) {
+                    let currentQuantity = Int(cart[index].quantity.replacingOccurrences(of: " pcs.", with: "")) ?? 0
+                    cart[index].quantity = "\(currentQuantity + 1) pcs."
+                    cart[index].price = addedProduct.price * (currentQuantity + 1)
+                } else {
+                    var productToAdd = addedProduct
+                    productToAdd.quantity = "1 pcs."
+                    productToAdd.price = addedProduct.price
+                    cart.append(productToAdd)
+                }
+            }))
+        } else {
+            return AnyView(Text("No product selected")) // Default view
+        }
     }
 }
 
